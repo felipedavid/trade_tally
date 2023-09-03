@@ -1,0 +1,25 @@
+{{define "base"}}
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trade Tally - {{ template "title" .}}</title>
+    <link rel="stylesheet" href="static/css/halfmoon.min.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+<body hx-boost="true" class="h-100">
+    {{ template "main" .}}
+    <script src="static/js/htmx.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+</body>
+</html>
+{{end}}
