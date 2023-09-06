@@ -5,11 +5,12 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/golang-migrate/migrate/v4"
 	"log/slog"
 	"net/http"
 	"os"
 	"trade_tally/internal/models"
+
+	"github.com/golang-migrate/migrate/v4"
 
 	msqlite "github.com/golang-migrate/migrate/v4/database/sqlite"
 	_ "github.com/golang-migrate/migrate/v4/source/file"
